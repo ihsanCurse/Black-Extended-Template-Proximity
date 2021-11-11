@@ -679,7 +679,7 @@
                         </Or>
                     </Conditions>
                 </Group>
-                <Effect id="watermarks" name="brightness" amount="-15%">
+                <Effect id="watermarks" name="brightness" amount="15%">
                     <CardModifier key="watermark" value="${proximity.options.watermark}">
                         <IsPresent key="proximity.options.watermark" />
                     </CardModifier>
@@ -690,7 +690,7 @@
                                     <FileExists src="${watermark}.png" />
                                 </Conditions>
                             </Image>
-                            <SVG src="${watermark}" x="1644" y="3420" width="1398" height="1015">
+                            <SVG src="${watermark}" x="1644" y="3490" width="1398" height="1015">
                                 <Conditions>
                                     <FileExists src="${watermark}.svg" />
                                 </Conditions>
